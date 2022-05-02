@@ -39,4 +39,10 @@ export class HeroesComponent implements OnInit {
     this.selectedHero = hero;
     this.messageService.add('HeroesComponent: Select hero id=' + hero.id);
   }
+
+  addHero(name: string) {
+    this.heroService
+      .addHero({ name: name } as Hero)
+      .subscribe((hero) => this.heroes.push(hero));
+  }
 }
