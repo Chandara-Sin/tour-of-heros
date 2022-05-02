@@ -7,7 +7,6 @@ import { MessageService } from '../message.service';
   styleUrls: ['./message.component.css'],
 })
 export class MessageComponent implements OnInit {
-
   // message: string[] = []
 
   constructor(public messageService: MessageService) {}

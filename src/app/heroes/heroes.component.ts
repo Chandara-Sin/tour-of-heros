@@ -23,7 +23,7 @@ export class HeroesComponent implements OnInit {
   ) {}
   ngOnInit(): void {
     // this.heroes = this.heroService.getHeros();
-    this.heroService.getHeros().subscribe(
+    this.heroService.getHeroes().subscribe(
       // Next
       (heroes: Hero[]) => (this.heroes = heroes),
 
